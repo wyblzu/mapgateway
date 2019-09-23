@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mapgateway-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/mapgateway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=mapgateway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
